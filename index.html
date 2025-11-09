@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Malmi Oshadhi</title>
+        <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <!-- a fit 3 social icons with links-->
+            <div class="social-icons-container-vertical">
+                <a href="https://github.com/malmiO" target="_blank">
+                    <img src="assets/github-icon.png" alt="GitHub" class="social-icon">
+                </a>
+                <a href="mailto:malmi.dja@gmail.com" target="_blank">
+                    <img src="assets/email-icon.png" alt="Email" class="social-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/malmioshadhi/" target="_blank">
+                    <img src="assets/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+            <div class="hero-section">
+                <!-- hero image-->
+                <img src="assets/hero-image.jpg" alt="Hero Image" class="hero-image">
+                <div class="hero-square">
+                    <h3 class="hero-pretitle">Hello ! I am</h3>
+                    <h1 class="hero-title">Malmi Oshadhi</h1>
+                    <p class="hero-subtitle">A developer who enjoys crafting meaningful designs and bringing them to life with code.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="location.href='#projects'">Projects</button>
+                        <button class="btn btn-secondary" onclick="window.open('assets/Malmi Oshadhi.pdf', '_blank')">Resume</button>
+                        <button class="btn btn-secondary" onclick="location.href='#about'">About Me</button>
+                    </div>
+                </div>
+                <div class="tech-logo-marquee">
+                    <div class="tech-logos">
+                        <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML5" class="tech-logo">
+                        <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS3" class="tech-logo">
+                        <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JavaScript" class="tech-logo">
+                        <img src="https://img.icons8.com/?size=100&id=87330&format=png&color=000000" alt="Firebase" class="tech-logo">
+                        <img src="https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png&color=000000" alt="Flutter" class="tech-logo">
+                        <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" alt="Python" class="tech-logo">
+                    </div>
+                </div>
+            </div>
+            <div class="about-section" id="about">
+                <h2>About Me</h2>
+                <p> I am currently pursuing a BSc (Hons) in Computing from Coventry University, offered at NIBM, Sri Lanka. Passionate about software development, UI/UX design, and creating user-centered digital solutions that blend functionality with clean design. Looking forward to applying technical knowledge, expanding development expertise, and contributing to innovative software projects alongside a team of forward-thinking professionals</p>
+            </div>
+        </div>
+
+        <div class="project-section" id="projects">
+            <div class="project-section-header">
+                <!--<div class="socail-icons-container-horizontal">
+                    <a href="https://github.com/malmiO" target="_blank">
+                        <img src="assets/github-icon.png" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="mailto:malmi.dja@gmail.com" target="_blank">
+                        <img src="assets/email-icon.png" alt="Email" class="social-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/malmioshadhi/" target="_blank">
+                        <img src="assets/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                </div>
+                -->
+                <h2>Projects</h2>
+            </div>
+            
+            <div class="projects-container">
+                <a href="pages/web-projects.html" target="_blank" class="project-card">
+                    <img src="assets/web.jpg" alt="Project 1" class="project-image">
+                    <h3 class="project-title">Web Applications</h3>
+                </a>
+
+                <a href="#" class="project-card coming-soon">
+                    <img src="assets/mobile.jpg" alt="Project 2" class="project-image">
+                    <h3 class="project-title">Mobile Applications</h3>
+                </a>
+
+                <a href="pages/uiux.html" target="_blank" class="project-card">
+                    <img src="assets/uiux.jpg" alt="Project 3" class="project-image">
+                    <h3 class="project-title">UI Designs</h3>
+                </a>
+
+                <a href="#" class="project-card coming-soon">
+                    <img src="assets/ai.jpg" alt="Project 4" class="project-image">
+                    <h3 class="project-title">AI & Data Projects</h3>
+                </a>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        const comingSoonCards = document.querySelectorAll('.coming-soon');
+        comingSoonCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                e.preventDefault(); // stops navigation
+                alert('Coming Soon!');
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <p>&copy; 2025 Malmi Oshadhi. All rights reserved.</p>
+        <p> Made with ❤️ by <a href="https://github.com/malmiO" target="_blank">Malmi Oshadhi</a></p>
+    </footer>
+</html>

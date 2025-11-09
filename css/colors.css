@@ -1,0 +1,22 @@
+:root {
+  /* 🌈 Primary Theme Colors */
+  --primary-bg: #0B022C;        /* Deep purple background */
+  --secondary-bg: #120A3C;      /* Slightly lighter variant */
+  --accent-color: #7B3FF2;      /* Vibrant purple accent */
+  --highlight-color: #00C3FF;   /* Electric blue for glow or hover */
+  --light-bg: rgba(255, 255, 255, 0.1); /* For glass effects */
+
+  /* 🎨 Text Colors */
+  --text-light: #FFFFFF;
+  --text-dark: #0B022C;
+  --text-muted: #B8B8B8;
+
+  /* 💡 Button / Link Colors */
+  --btn-bg: #7B3FF2;
+  --btn-hover: #00C3FF;
+  --btn-text: #FFFFFF;
+
+  /* 🧊 Border / Shadow */
+  --border-color: rgba(255, 255, 255, 0.2);
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
