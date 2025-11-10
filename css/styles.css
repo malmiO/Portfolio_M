@@ -1,7 +1,7 @@
 /* --------------------------------------------------
    Global Styles
 -------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--primary-bg);
   color: var(--text-light);
   line-height: 1.6;
@@ -18,11 +18,9 @@ body {
 }
 
 .btn {
-    text-decoration: none; /* remove underline */
-    display: inline-block; 
+  text-decoration: none; /* remove underline */
+  display: inline-block;
 }
-
-
 
 /* --------------------------------------------------
    Social Icons Sidebar
@@ -32,7 +30,7 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 70px; 
+  width: 70px;
   background-color: rgba(11, 2, 44, 0.9);
   backdrop-filter: blur(8px);
   display: flex;
@@ -70,10 +68,10 @@ body {
   position: relative;
   height: 100vh;
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
-  padding-left: 10%; 
+  padding-left: 10%;
 }
 
 .hero-image {
@@ -96,7 +94,7 @@ body {
   border: 1px solid var(--border-color);
   border-radius: 20px;
   padding: 60px 80px;
-  text-align: left; 
+  text-align: left;
   max-width: 600px;
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
 }
@@ -127,7 +125,7 @@ body {
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px; 
+  gap: 15px;
 }
 
 .btn {
@@ -146,7 +144,7 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #7B3FF2;
+  background-color: #7b3ff2;
   box-shadow: 0 4px 15px var(--shadow-color);
   border: 1px solid rgba(245, 245, 245, 0.675);
   transform: translateY(-2px);
@@ -167,19 +165,19 @@ body {
 }
 
 .btn-back {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: auto;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 
-    color: rgba(245, 245, 245, 0.86);
-    transition: all 0.3s ease;
-    z-index: 110; /* above social icons */
+  color: rgba(245, 245, 245, 0.86);
+  transition: all 0.3s ease;
+  z-index: 110; /* above social icons */
 }
 
 /* --------------------------------------------------
@@ -300,121 +298,117 @@ body {
    Project Tabs
 ------------------------- */
 .project-tabs {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .tab-btn {
-    padding: 10px 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    background-color: var(--light-bg);
-    color: var(--text-light);
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--light-bg);
+  color: var(--text-light);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .tab-btn.active {
-    background-color: whitesmoke;
-    color: hsl(267, 100%, 10%);
-    font-weight: bold;
-    border-color: rgba(245, 245, 245, 0.503);
+  background-color: whitesmoke;
+  color: hsl(267, 100%, 10%);
+  font-weight: bold;
+  border-color: rgba(245, 245, 245, 0.503);
 }
 
 .tab-btn:hover {
-    background-color: rgba(245, 245, 245, 0.218);
-    color: hsl(0, 0%, 100%);
-    font-weight: bold;
-    border-color: rgba(245, 245, 245, 0.503);
+  background-color: rgba(245, 245, 245, 0.218);
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  border-color: rgba(245, 245, 245, 0.503);
 }
 
 /* -----------------------
    Tab Content
 ------------------------- */
 .tab-content .project-card {
-    display: flex;
-    flex-direction: row; /* image left, info right */
-    gap: 20px;
-    background: var(--light-bg);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    align-items: flex-start;
-    padding: 40px;
-    cursor: pointer;
-    margin-left: 200px;
-    margin-right: 80px;
-    margin-bottom: 20px;
-    max-width: 1100px;
-    
+  display: flex;
+  flex-direction: row; /* image left, info right */
+  gap: 20px;
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-items: flex-start;
+  padding: 40px;
+  cursor: pointer;
+  margin-left: 200px;
+  margin-right: 80px;
+  margin-bottom: 20px;
+  max-width: 1100px;
 }
 
 .tab-content .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 20px var(---color);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px var(---color);
 }
 
 .tab-content .project-image {
-    width: 250px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .tab-content .project-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.tab-content .project-info .project-title{
-    font-size: 1.3rem;
-    text-align: left;
-    margin-left: 6px;
+.tab-content .project-info .project-title {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-left: 6px;
 }
 
 .project-description {
-    font-size: 0.95rem;
-    color: var(--text-muted);
-    margin-left: 20px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    text-align: left;
-    margin-right: 20px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-left: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: left;
+  margin-right: 20px;
 }
 
 .project-links {
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .project-links a.btn {
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    margin-left: 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  margin-left: 20px;
 }
 
-
 .tab-content .project-title {
-    font-size: 1.1rem;
-    color: var(--text-light);
+  font-size: 1.1rem;
+  color: var(--text-light);
 }
 
 .tab-content {
-    display: none; /* hide all by default */
+  display: none; /* hide all by default */
 }
 
 .tab-content.active {
-    display: block; /* show active tab */
+  display: block; /* show active tab */
 }
-
-
 
 /* --------------------------------------------------
    Footer
@@ -438,18 +432,31 @@ body {
 
 /* uiux page project title */
 .projecttitle {
-    color: var(--text-light);
-    padding-top: 10px;
+  color: var(--text-light);
+  padding-top: 10px;
 }
 .projectdescription {
-    color: var(--text-muted);
-    padding-bottom: 10px;
-} 
+  color: var(--text-muted);
+  padding-bottom: 10px;
+}
 .ui-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-section-header h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--highlight-color);
+}
+
+.project-section-header p {
+  color: var(--text-muted);
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
 }
 
 /* --------------------------------------------------
@@ -611,51 +618,50 @@ html {
 }
 
 @media (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 0 15px;
-    }
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
 }
 
 @media (max-width: 768px) {
-    .project-card {
-        padding: 15px;
-    }
+  .project-card {
+    padding: 15px;
+  }
 
-    .projecttitle {
-        font-size: 1.1rem;
-    }
+  .projecttitle {
+    font-size: 1.1rem;
+  }
 
-    .projectdescription {
-        font-size: 0.9rem;
-    }
+  .projectdescription {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .btn {
-        width: 100%;
-        font-size: 0.9rem;
-        padding: 10px 0;
-    }
+  .btn {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 768px) {
-    .project-card {
-        margin-bottom: 20px;
-    }
+  .project-card {
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 768px) {
-    .tab-content .project-card {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
+  .tab-content .project-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
 
-    .tab-content .project-info {
-        margin-top: 15px;
-    }
+  .tab-content .project-info {
+    margin-top: 15px;
+  }
 }
-
