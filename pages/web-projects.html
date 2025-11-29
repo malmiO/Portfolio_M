@@ -31,23 +31,36 @@
                 <h2>Web Applications</h2>
             </div>
             <div class="tab-content-container">
-                    <div class="project-card">
-                        <img src="../assets/fashionstore.png" alt="Fashion Store" class="project-image">
-                        <div class="project-info">
-                            <h3 class="project-title">Fashion Store</h3>
-                            <p class="project-description">
-                               A modern and stylish Fashion Store is a static website template built with HTML, CSS, and JavaScript. The website showcases fashion collections, products, and brand details. It includes a subscription feature (Formspree), a contact form (EmailJS), and a WhatsApp integration for direct communication.
-                            </p>
-                            <div class="project-links">
-                                <a href="https://github.com/malmiO/Fashion-Store.git" target="_blank" class="btn btn-primary">View GitHub</a>
-                                <a href="https://www.figma.com/design/xdGE5EntmXMRrdXSayDPm4/Fashion-Store-Static-Web-Page--Community-?node-id=0-1&t=YyTHzRqTnyS2SptH-1" target="_blank" class="btn btn-secondary">View Design</a>
-                            </div>
+                <div class="project-card">
+                    <img src="../assets/SCAN.png" alt="webqrscanner-test" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Animated Multi-Screen Landing Page</h3>
+                        <p class="project-description">
+                           This web build simply to advertise the small business with a QR. When users scan the QR code they can see this animated simple informative web page.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/malmiO/QR-Web-Test.git" target="_blank" class="btn btn-primary">View GitHub</a>
+                            <a href="#" class="btn btn-secondary" id="previewBtn">Preview</a>
                         </div>
                     </div>
-                   <div class="project-card">
-                        <img src="../assets/uiux1.png" alt="Portfolio" class="project-image">
-                        <div class="project-info">
-                            <h3 class="project-title">Portfolio Website</h3>
+                </div>
+                <div class="project-card">
+                    <img src="../assets/fashionstore.png" alt="Fashion Store" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Fashion Store</h3>
+                        <p class="project-description">
+                           A modern and stylish Fashion Store is a static website template built with HTML, CSS, and JavaScript. The website showcases fashion collections, products, and brand details. It includes a subscription feature (Formspree), a contact form (EmailJS), and a WhatsApp integration for direct communication.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/malmiO/Fashion-Store.git" target="_blank" class="btn btn-primary">View GitHub</a>
+                            <a href="https://www.figma.com/design/xdGE5EntmXMRrdXSayDPm4/Fashion-Store-Static-Web-Page--Community-?node-id=0-1&t=YyTHzRqTnyS2SptH-1" target="_blank" class="btn btn-secondary">View Design</a>
+                        </div>
+                    </div>
+                </div>
+               <div class="project-card">
+                    <img src="../assets/uiux1.png" alt="Portfolio" class="project-image">
+                    <div class="project-info">
+                        <h3 class="project-title">Portfolio Website</h3>
                             <p class="project-description">
                                 A fully responsive portfolio website built to showcase projects, skills, and experience. 
                                 Features smooth scrolling, modern design aesthetics, and interactive UI elements to engage visitors.
@@ -59,8 +72,40 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- QR Modal -->
+            <div id="qrModal" class="qr-modal">
+                <div class="qr-modal-content">
+                    <span class="qr-close">&times;</span>
+                    <img src="../assets/SCAN.png" alt="QR Code" class="qr-image">
+                    <p>Scan this QR to preview the live website</p>
+                </div>
+            </div>
+
 
         <script src="../js/script.js"></script>
+        <script>
+            const modal = document.getElementById("qrModal");
+            const btn = document.getElementById("previewBtn");
+            const closeBtn = document.querySelector(".qr-close");
+
+            btn.onclick = function(e) {
+                e.preventDefault();
+                modal.style.display = "flex";
+            };
+
+            closeBtn.onclick = function() {
+                modal.style.display = "none";
+            };
+
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
+        </script>
+
 
     </body>
     <footer class="footer">
